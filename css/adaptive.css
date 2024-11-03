@@ -68,14 +68,27 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .header_links {
+@media (min-width: 1001px) {
+    .hamburger-menu {
         display: none;
+        /* Сховати бургер-меню при ширині більше 1000px */
     }
 
-    .burger,
-    .menu_label {
+    .header_links {
+        display: flex;
+        /* Показати звичайне меню */
+    }
+}
+
+@media (max-width: 1000px) {
+    .header_links {
+        display: none;
+        /* Сховати звичайне меню при ширині 1000px і нижче */
+    }
+
+    .hamburger-menu {
         display: block;
+        /* Показати бургер-меню */
     }
 
     .about_text {
