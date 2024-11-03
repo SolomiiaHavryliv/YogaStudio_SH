@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/*плавний перехід*/
+* {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+/*фонове фото*/
+.first_page {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/first-bg.png") center top / cover;
+    padding: 20px 90px;
+}
+
+/*логотип*/
+.logo {
+    width: 60px;
+}
+
+.first_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*бургер меню*/
+
+.burger {
+    display: none;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger::before,
+.burger::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.burger::before {
+    top: -16px;
+}
+
+.burger::after {
+    top: 16px;
+}
+
+/*Задаємо стилі для нашого меню.*/
+
+.burger_menu {
+    position: absolute;
+    width: 250px;
+    top: 0;
+    left: 0;
+    padding: 150px 30px 30px;
+    background-color: #690C0C;
+    display: none;
+    flex-direction: column;
+    row-gap: 15px;
+    transition: all .2s linear;
+}
+
+/*положення елемента на нижчестоящих елементів*/
+
+.menu_label {
+    position: relative;
+    z-index: 3;
+}
+
+/*активація чекбокса*/
+
+#hamburger-menu,
+.menu_label {
+    display: none;
+}
+
+#hamburger-menu:checked~.burger_menu {
+    display: flex;
+}
+
+/* меню */
+.header_links {
+    display: flex;
+    column-gap: 34px;
+}
+
+/*стилі для пунктів меню*/
+.h_link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.h_link:hover {
+    color: #B00909;
+}
+
+.first_content {
+    margin-top: 100px;
+    row-gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*заголовок*/
+.first_title h1 {
+    font-family: 'Rosarivo', sans-serif;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 0.1em;
+    padding-top: 90px;
+}
+
+/*кнопка*/
+
+.join_btn a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: 30px;
+    padding: 14px 0;
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    width: 200px;
+    text-align: center;
+
+
+    border: 2px solid #690C0C;
+    margin-top: -5px;
+    letter-spacing: 0.1em;
+    font-size: 17px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.join_btn a:hover {
+    background-color: #690C0C;
+}
+
+/* друга сторінка*/
+
+.yoga_nature {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.nature_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: #B00909;
+}
+
+.nature_subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+/* флекси 4 блоки */
+
+.nature_wrapper,
+.nature_subWrap {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 50px;
+    padding-top: 10px;
+}
+
+
+.nature_block {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.nature_text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* сторінкa "про нас" */
+
+.about_us {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/about-us-bg.png") center top / cover;
+    padding: 165px 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+}
+
+/*заголовок*/
+
+.about_title {
+    font-size: 60px;
+    color: #8D0505;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*опис*/
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 50%;
+}
+
+
+.about_text p {
+    letter-spacing: 0.1em;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    color: white;
+}
+
+
+/* сторінка "програми" */
+
+.programs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+/*заголовок*/
+.programs_title {
+    font-size: 50px;
+    color: rgba(141, 5, 5, 0.91);
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 60px;
+}
+
+/*блоки*/
+
+.program_block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    padding: 40px 65px;
+}
+
+.program_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+/* заголовки блоків */
+.program_content h4 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* опис блоків */
+.program_content p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    line-height: 42px;
+    text-align: justify;
+}
+
+/* кнопка */
+.program_button a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000000;
+    font-weight: 30px;
+    padding: 14px 0;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #B40000;
+    margin-top: -5px;
+    letter-spacing: 0.1em;
+    font-size: 17px;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.2s linear;
+}
+
+/* при наведенні */
+.program_button a:hover {
+    background-color: #B40000;
+}
+
+/* адаптивні фото */
+.program_img_adaptive {
+    display: none;
+}
+
+
+/* сторінка цін */
+
+.prices {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* заголовок */
+.prices_title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* підзаголовоки */
+.prices_block_title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+}
+
+/* блоки цін */
+.prices_content {
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+}
+
+.prices_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+/*лінія*/
+.prices_block_inner {
+    display: flex;
+    column-gap: 70px;
+}
+
+.prices_col_1 h4 {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.prices_col_2 h4 {
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.prices_border {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+}
+
+
+/* сторінка форми */
+
+/*фонове фото*/
+.get_free {
+    height: 100vh;
+    background: url("../images/get_free.jpg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 90px;
+    padding-left: 115px;
+}
+
+/*заголовок*/
+.free_title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    color: white;
+}
+
+/*форма*/
+.free_forms {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.free_input {
+    width: 380px;
+    height: 65px;
+    border: 2px solid rgba(105, 12, 12, 0.96);
+    border-radius: 20px;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+}
+
+.free_input::placeholder {
+    color: white;
+}
+
+
+.free_button a {
+    width: 380px;
+    height: 65px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 30px;
+    padding: 20px 0;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    border: 2px solid #690C0C;
+    letter-spacing: 0.1em;
+}
+
+.free_button a:hover {
+    background-color: #690C0C;
+}
+
+
+/* Footer */
+
+.main_footer {
+    width: 100%;
+    height: 230px;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_logo {
+    width: 80px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.contacts h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.social_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.contacts p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: white;
+}
+
+.address h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer_border {
+    height: 80%;
+    width: 1px;
+    background-color: #fff;
+    display: none;
+}
+
+.address_logo {
+    height: 45px;
+    display: none;
+}

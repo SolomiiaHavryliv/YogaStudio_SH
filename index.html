@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poiret+One&family=Forum&family=Cormorant+Garamond&family=Raleway:wght@400;500&family=Rosarivo&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <meta name="description"
+        content="Ми сучасна студія йоги.Кожен знайде у нас те, що йому потрібно. 
+        Заняття для початківців та просунутих йогів, безліч практик: кундаліні, 
+        йога для вагітних, медитації та багато іншого.">
+    <meta name="author" content="Solomia Havryliv" />
+    <meta name="copyright" content="Yoga Studio" />
+
+    <meta property="og:title" content="Yoga Studio">
+    <meta property="og:image" content="images/first-bg.png">
+    <meta property="og:type" content="WebSite" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css" 
+</head>
+<body>
+
+    <!-- Перша сторінка -->
+    <div class="first_page" id="first_page">
+        <header class="first_header">
+
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <!-- Меню -->
+            <div class="header_links">
+                <a href="#first_page" class="h_link">Головна</a>
+                <a href="#about_us" class="h_link">Про нас</a>
+                <a href="#programs" class="h_link">Програми</a>
+                <a href="#prices" class="h_link">Ціни</a>
+                <a href="#contacts" class="h_link">Контакти</a>
+            </div>
+
+            <!-- Бургер меню -->
+            <label for="hamburger-menu" class="menu_label"><span class="burger"></span></label>
+            <input type="checkbox" id="hamburger-menu">
+            <div class="burger_menu" id="burger_menu">
+                <a href="#first_page" class="h_link">Головна</a>
+                <a href="#about_us" class="h_link">Про нас</a>
+                <a href="#programs" class="h_link">Програми</a>
+                <a href="#prices" class="h_link">Ціни</a>
+                <a href="#contacts" class="h_link">Контакти</a>
+            </div>
+
+        </header>
+
+        <div class="first_content">
+            <!-- заголовок -->
+            <div class="first_title">
+                <h1>Yoga<br>
+                    Studio</h1>
+            </div>
+            <!-- кнопка -->
+            <div class="join_btn">
+                <a href="#signup">Приєднатися</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- друга сторінка -->
+    <section>
+    
+        <div class="yoga_nature">
+            <div class="nature_title">
+                Ваша природа йоги
+            </div>
+            <div class="nature_subtitle">
+                YOGA - це практика розуму і тіла, що
+                бере початок з давньоіндійської філософії.
+            </div>
+            <div class="nature_wrapper">
+                <div class="nature_subWrap">
+                    <div class="nature_block nature_block1">
+                        <img src="images/nature1.png" alt="yoga">
+                        <div class="nature_text">
+                            Позбудетеся стресу та негативного досвіду.
+                        </div>
+                    </div>
+                    <div class="nature_block nature_block2">
+                        <img src="images/nature2.png" alt="yoga">
+                        <div class="nature_text">
+                            Дихальні техніки та тренування спалять жир і
+                            нормалізують гормональний баланс.
+                        </div>
+                    </div>
+                </div>
+                <div class="nature_subWrap">
+                    <div class="nature_block nature_block3">
+                        <img src="images/nature3.png" alt="yoga">
+                        <div class="nature_text">
+                            Розслабляючі антистресові вправи
+                            перед сном допоможуть заспокоїтись.
+                        </div>
+                    </div>
+                    <div class="nature_block nature_block4">
+                        <img src="images/nature4.png" alt="yoga">
+                        <div class="nature_text">
+                            Після кожного уроку частуватимемо вас чаєм.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- сторінкa "про нас" -->
+    
+    <section>
+        <div class="about_us" id="about_us">
+            <div class="about_title">
+                Про нас
+            </div>
+            <div class="about_text">
+                <p>
+                    Сучасна студія йоги.
+                </p>
+                <p>
+                    Комфортні кімнати, професійні викладачі,
+                    широкий вибір напрямків для будь-якого
+                    рівня підготовки.
+                </p>
+                <p>
+                    Кожен знайде у нас те, що йому потрібно.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- сторінкa "програми" -->
+
+    <section>
+    
+        <div class="programs" id="programs">
+            <div class="programs_title">
+                Програми
+            </div>
+
+    <!-- перший блок: Kundalini YOGA -->
+    <div class="program_block">
+        <img src="images/program_1.png" alt="program" class="program_img">
+        <img src="images/program_1_adaptive.png" loading="lazy" title="Kundalini YOGA" alt="поза йоги"
+            class="program_img_adaptive">
+        <div class="program_content">
+            <h4> Kundalini YOGA </h4>
+            <p>
+                Динамічне виконання поз йоги: розвиває і зміцнює все тіло, тонізує м’язи, 
+                а також заряджає енергією. Тіло підтягується, зайві кілограми йдуть.
+                Розвивається сила, витривалість, гнучкість, координація і рівновага.
+            </p>
+            <p>
+                В кінці практики ви поринете в глибоке розслаблення після інтенсивного заняття.
+            </p>
+            <p>
+                Заняття проходить у стилі Power Vinyasa, де дихання синхронізоване з рухом,
+                а зв’язки наповнюються силовими вправами. Швидкі, але плавні переходи між 
+                позами дозволяють зосередитися.
+            </p>
+            <div class="program_button">
+                <a href="#signup">Зарезервувати</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- другий блок:  ЙОГА для вагітних -->
+    
+    <div class="program_block">
+        <img src="images/program_2_adaptive.png" loading="lazy" title="ЙОГА для вагітних" alt="Вагітна жінка"
+            class="program_img_adaptive">
+        <div class="program_content">
+            <h4> ЙОГА для вагітних </h4>
+            <p>
+                Йога під час вагітності – це чудовий спосіб залишатися активною і здоровою. На заняттях
+                використовують техніки розслаблення та дихання з позами адаптованими для вагітних.
+            </p>
+            <p>
+                Доведено, що йога знижує тривожність і допомагає жінкам залишатися спокійними
+                під час вагітності та пологів. Це також може покращити ваш сон. Багато технік дихання,
+                які ви використовуєте в йозі, можуть допомогти вам підготуватися до пологів.
+    
+            </p>
+            <p>
+                Якщо ви використаєте їх під час пологів, вони допоможуть вам зберігати спокій і
+                рівномірно дихати під час скорочень.
+            </p>
+            <div class="program_button">
+                <a href="#signup">Зарезервувати</a>
+            </div>
+        </div>
+        <img src="images/program_2.png" alt="program" class="program_img">
+    </div>
+    
+    <!-- третій блок:  Медитація -->
+    
+    <div class="program_block">
+        <img src="images/program_3.png" alt="program" class="program_img">
+        <img src="images/program_3_adaptive.png" loading="lazy" title="Медитація" alt="Поза лотос"
+            class="program_img_adaptive">
+        <div class="program_content">
+            <h4>Медитація</h4>
+            <p>
+                Практика медитації усвідомленості — це прості, але ефективні способи підвищити 
+                нашу самосвідомість, культивувати більший спокій, рівновагу та покращити нашу
+                здатність повніше жити в даний момент.
+            </p>
+            <p>
+                Приходьте та приєднуйтесь до нас, коли ми досліджуємо низку формальних і 
+                неформальних практик усвідомленості та відкриваємо для себе переваги. 
+                Курс добре підходить для початківців, які хочуть дізнатися більше, або 
+                для тих, хто має практику медитації і хоче зануритися трохи глибше.
+            </p>
+            <div class="program_button">
+                <a href="#signup">Зарезервувати</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- сторінка "ціни" -->
+    
+    <section>
+        <div class="prices" id="prices">
+            <div class="prices_title">
+                <h3>ЦІНИ</h3>
+            </div>
+
+            <div class="prices_content">
+
+                <div class="prices_block">
+                    <div class="prices_block_title">
+                        Індивідуальні
+                    </div>
+                    <div class="prices_block_inner">
+                        <div class="prices_col_1">
+                            <h4>1 заняття</h4>
+                            <h4>5 занять</h4>
+                            <h4>10 занять</h4>
+                            <h4>15 занять</h4>
+                        </div>
+                        <div class="prices_col_2">
+                            <h4>250 ₴</h4>
+                            <h4>1200 ₴</h4>
+                            <h4>2350 ₴</h4>
+                            <h4>3600 ₴</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices_border"></div>
+                <div class="prices_block">
+                    <div class="prices_block_title">
+                        В групі
+                    </div>
+                    <div class="prices_block_inner">
+                        <div class="prices_col_1">
+                            <h4>1 заняття</h4>
+                            <h4>5 занять</h4>
+                            <h4>10 занять</h4>
+                            <h4>15 занять</h4>
+                        </div>
+                        <div class="prices_col_2">
+                            <h4>150 ₴</h4>
+                            <h4>700 ₴</h4>
+                            <h4>1400 ₴</h4>
+                            <h4>2200 ₴</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- сторінка форми -->
+    
+    <section id="signup">
+    
+        <div class="get_free">
+            <div class="free_title">
+                Отримай<br>безкоштовне заняття
+            </div>
+            <div class="free_forms">
+                <label>
+                    <input type="text" class="free_input" placeholder="Name">
+                </label>
+                <label>
+                    <input type="text" class="free_input" placeholder="E-mail">
+                </label>
+            </div>
+            <div class="free_button">
+                <a href="#">Зареєструватися</a>
+            </div>   
+        </div>
+    
+    </section>
+
+    <!-- футер -->
+    
+    <footer class="main_footer" id="contacts">
+        <img src="images/footer_logo.svg" alt="logo" class="footer_logo">
+        <div class="contacts">
+            <h4>Ми в соціальних мережах</h4>
+            <div class="social_block">
+                <a href="https://www.facebook.com/" rel="nofollow" target="_blank"><img src="images/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" rel="nofollow" target="_blank"><img src="images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://web.telegram.org/k/" rel="nofollow" target="_blank"><img src="images/telegram.png"
+                        alt="telegram"></a>
+            </div>
+            <p>
+                Авторське право 2022 YOGA, <br>
+                всі права захищено
+            </p>
+        </div>
+        <div class="footer_border"></div>
+        <div class="address">
+            <img src="images/footer_logo.svg" alt="logo" class="address_logo">
+            <h4>Шевченка 27, Львів, Україна</h4>
+            <h4><a href="+380975910127">+380975910127</a></h4>
+            <h4>yoga.ua@gmail.com</h4>
+        </div>
+    </footer>
+
+</body>
+</html>
